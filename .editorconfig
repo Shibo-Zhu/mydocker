@@ -1,0 +1,25 @@
+; https://editorconfig.org/
+
+# 顶层的 EditorConfig 文件，root 表示不再向父目录查找其他 .editorconfig 文件
+root = true
+
+# 针对所有文件的配置
+[*]
+# 在文件末尾保留换行
+insert_final_newline = true
+# UTF-8 字符编码
+charset = utf-8
+# 删除行末多余的空格
+trim_trailing_whitespace = true
+# 使用空格缩进
+indent_style = space
+# 缩进的空格数 
+indent_size = 2
+
+[{Makefile,go.mod,go.sum,*.go,.gitmodules}]
+indent_style = tab
+indent_size = 4
+
+[*.md]
+indent_size = 4
+trim_trailing_whitespace = false
