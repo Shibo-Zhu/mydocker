@@ -39,7 +39,7 @@ else
 fi
 
 # Install containerd
-sudo apt install -y containerd.io
+sudo apt update && sudo apt install -y containerd.io
 
 # Configure containerd to use systemd as cgroup driver
 sudo containerd config default | sudo tee /etc/containerd/config.toml >/dev/null 2>&1
